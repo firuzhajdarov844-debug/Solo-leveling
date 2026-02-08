@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(circle at top, #05070c, #000);
+  color: #eaf6ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: rgba(10, 20, 40, 0.85);
+  border: 1px solid rgba(0, 180, 255, 0.4);
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 0 40px rgba(0, 180, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #7dd3ff;
+  text-shadow: 0 0 12px rgba(0,180,255,0.6);
+  margin-bottom: 20px;
+}
+
+.rank {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.level {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.stats div {
+  margin: 10px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,180,255,0.4);
+  background: rgba(0, 120, 255, 0.15);
+  color: #bfe9ff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  backdrop-filter: blur(6px);
+}
+
+button:hover {
+  background: rgba(0, 180, 255, 0.35);
+  box-shadow: 0 0 12px rgba(0,180,255,0.4);
+}
+
+.xp {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}

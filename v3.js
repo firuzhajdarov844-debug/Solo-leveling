@@ -47,8 +47,16 @@ function addXP(amount){
 function rankCheck(){
   const index = Math.min(Math.floor(system.level / 5), ranks.length-1);
   const newRank = ranks[index];
+
   if(system.rank !== newRank){
     system.rank = newRank;
+
+    const app = document.querySelector(".app");
+    app.classList.add("level-up-flash");
+
+    setTimeout(()=>app.classList.remove("level-up-flash"),1000);
+
+    applyRankAura();
     systemMessage("RANK UP! Новый ранг: " + newRank);
   }
 }

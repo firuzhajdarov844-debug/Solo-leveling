@@ -24,7 +24,22 @@
       <div>💪 Сила: <span id="power">1</span></div>
       <div>🏃 Выносливость: <span id="stamina">1</span></div>
       <div>🧠 Контроль: <span id="control">1</span></div>
+      <button onclick="trainV4('power')">Тренировать силу</button>
+<button onclick="trainV4('stamina')">Тренировать выносливость</button>
+<button onclick="trainV4('control')">Тренировать контроль</button>
+<button onclick="restV4()">Восстановление</button>
     </div>
+    <div class="v4-stats">
+  <div>XP: <span id="xp">0</span> / <span id="xpMax">100</span></div>
+  <div>Усталость: <span id="fatigue">0%</span></div>
+
+  <div>Ранг: <span id="rank">F</span></div>
+  <div>Уровень: <span id="level">1</span></div>
+
+  <div>Сила: <span id="power">1</span></div>
+  <div>Выносливость: <span id="stamina">1</span></div>
+  <div>Контроль: <span id="control">1</span></div>
+</div>
 
     <button onclick="train('power')">Тренировать силу</button>
 <button onclick="train('stamina')">Тренировать выносливость</button>
@@ -37,7 +52,7 @@
 
   <script src="app.js"></script>
   <script src="v3.js"></script>
-  <script>
+  <script src="v4pro.js"></script>
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("./service-worker.js");
 }

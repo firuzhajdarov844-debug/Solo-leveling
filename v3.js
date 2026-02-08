@@ -103,6 +103,23 @@ function renderV3(){
   document.getElementById("control").innerText = system.stats.control;
   document.getElementById("xp").innerText = system.xp;
   document.getElementById("xpMax").innerText = system.xpMax;
+
+  applyRankAura();
 }
 
 renderV3();
+function applyRankAura(){
+  const app = document.querySelector(".app");
+
+  // удаляем старые классы
+  app.className = "app";
+
+  app.classList.add("rank-"+system.rank);
+
+  let aura = document.querySelector(".rank-aura");
+  if(!aura){
+    aura = document.createElement("div");
+    aura.className = "rank-aura";
+    app.appendChild(aura);
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Body System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>BODY SYSTEM</h1>
+    <p class="rank">Ранг: <span id="rank">F</span></p>
+    <p class="level">Уровень: <span id="level">1</span></p>
+
+    <div class="stats">
+      <div>💪 Сила: <span id="power">1</span></div>
+      <div>🏃 Выносливость: <span id="stamina">1</span></div>
+      <div>🧠 Контроль: <span id="control">1</span></div>
+    </div>
+
+    <button onclick="train('power')">Тренировать силу</button>
+    <button onclick="train('stamina')">Тренировать выносливость</button>
+    <button onclick="train('control')">Тренировать контроль</button>
+
+    <p class="xp">XP: <span id="xp">0</span> / <span id="xpMax">100</span></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
